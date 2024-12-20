@@ -1,0 +1,100 @@
+.profile-container {
+  width: 350px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #16e469, #2ecb91);
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.upload-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  height: 97px;
+  width: 95px;
+  margin-bottom: 3px;
+}
+
+.upload-overlay input {
+  display: none; /* Hide file input */
+}
+
+.profile-fields {
+  margin: 20px 0;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.field label {
+  font-weight: bold;
+}
+
+.field input {
+  width: 60%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2ecb91;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2ecb91;
+}
+.avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.edit {
+  margin-top: 40px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}

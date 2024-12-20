@@ -1,0 +1,77 @@
+<div class="profile-container">
+  <!-- Header with Avatar -->
+  <div class="header">
+    <div
+      class="avatar"
+      (mouseenter)="hovering = true"
+      (mouseleave)="hovering = false"
+    >
+      <img
+        [src]="user.imageUrl || 'assets/images/default-avatar.jpg'"
+        alt="Avatar"
+      />
+
+      <!-- Show File Input on Hover -->
+      <div class="upload-overlay" *ngIf="hovering && isEditMode">
+        <label for="fileInput"><mat-icon class="edit">edit</mat-icon></label>
+        <input
+          id="fileInput"
+          type="file"
+          accept="image/*"
+          (change)="onFileChange($event)"
+        />
+      </div>
+    </div>
+    <h2>{{ user.username }}</h2>
+  </div>
+
+  <!-- Profile Fields -->
+  <div class="profile-fields">
+    <div class="field">
+      <label>Name:</label>
+      <input *ngIf="isEditMode" type="text" [(ngModel)]="user.username" />
+      <span *ngIf="!isEditMode">{{ user.username }}</span>
+    </div>
+    <div class="field">
+      <label>Email:</label>
+      <input
+        *ngIf="isEditMode"
+        type="email"
+        [(ngModel)]="user.email"
+        readonly
+      />
+      <span *ngIf="!isEditMode">{{ user.email }}</span>
+    </div>
+    <div class="field">
+      <label>Date of Birth:</label>
+      <input
+        *ngIf="isEditMode"
+        type="date"
+        [(ngModel)]="user.dob"
+        [max]="today"
+      />
+      <span *ngIf="!isEditMode">{{ user.dob }}</span>
+    </div>
+    <div class="field">
+      <label>Phone Number:</label>
+      <input
+        *ngIf="isEditMode"
+        type="text"
+        [(ngModel)]="user.phone"
+        maxlength="10"
+        pattern="^[0-9]{10}$"
+        (input)="validatePhoneNumber()"
+      />
+      <span *ngIf="!isEditMode">{{ user.phone }}</span>
+    </div>
+  </div>
+
+  <!-- Edit/Save Button -->
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="isEditMode ? saveProfile() : toggleEditMode()"
+  >
+    {{ isEditMode ? "Save Changes" : "Edit Profile" }}
+  </button>
+</div>

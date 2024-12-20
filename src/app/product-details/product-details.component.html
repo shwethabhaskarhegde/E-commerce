@@ -1,0 +1,47 @@
+<div class="product-details-container scrollable" *ngIf="product">
+  <!-- Product Title and Main Image -->
+  <div class="product-header">
+    <h2>{{ product.title }}</h2>
+    <img [src]="product.images" [alt]="product.title" class="product-image" />
+  </div>
+
+  <!-- Product Details Section -->
+  <div class="product-info">
+    <p>
+      <strong>Price:</strong> {{ product.price | currency : "INR" : "symbol" }}
+    </p>
+    <p><strong>Discount:</strong> Save {{ product.discountPercentage }}%</p>
+    <p>
+      <strong>Rating:</strong>
+      <ng-container *ngFor="let star of [].constructor(5); let i = index">
+        <i class="fa fa-star" [ngClass]="{ filled: i < product.rating }"></i>
+      </ng-container>
+    </p>
+    <p><strong>Category:</strong> {{ product.category }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+  </div>
+
+  <!-- Reviews Section -->
+  <div class="reviews-section">
+    <h4>Customer Reviews</h4>
+    <div *ngFor="let review of product.reviews" class="review">
+      <p>
+        <strong>{{ review.user }}</strong> (Rating:
+        <ng-container *ngFor="let star of [].constructor(5); let i = index">
+          <i
+            class="fa fa-star"
+            [ngClass]="{ filled: i < review.rating }"
+          ></i> </ng-container
+        >)
+      </p>
+      <p>{{ review.comment }}</p>
+    </div>
+  </div>
+  <div class="product-details-btns">
+    <button [routerLink]="['/product']" class="go-back-btn">Go Back</button>
+    <!-- Add to Cart Button -->
+    <button (click)="addToCart(product)" class="add-to-cart-btn">
+      Add to Cart
+    </button>
+  </div>
+</div>

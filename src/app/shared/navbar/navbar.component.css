@@ -1,0 +1,36 @@
+/* Toolbar styling */
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(61, 200, 154, 0.758);
+}
+
+/* Desktop menu */
+.desktop-menu {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+
+/* Mobile menu: hide desktop menu by default */
+.mobile-menu {
+  display: none;
+}
+
+.login {
+  margin-left: 800px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .example-icon {
+    color: white;
+  }
+  .mobile-menu {
+    display: block; /* Show mobile menu */
+  }
+}

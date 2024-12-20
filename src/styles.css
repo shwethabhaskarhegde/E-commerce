@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disables both horizontal and vertical scrolling */
+  height: 100%; /* Ensures the body takes up the full viewport */
+}
+.scrollable {
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100%; /* Ensure it takes up the full viewport height */
+  padding: 20px; /* Optional padding for better spacing */
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+app-root {
+  height: 100%;
+}
+body {
+  padding-bottom: 50px; /* Reserve space for the footer */
+}

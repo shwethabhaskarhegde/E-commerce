@@ -1,0 +1,94 @@
+<mat-toolbar>
+  <!-- Mobile View: Dropdown Menu -->
+  <div class="mobile-menu" *ngIf="isMobileView">
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/home">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item routerLink="/product">
+        <mat-icon>shopping_bag</mat-icon>
+        <span>Shop</span>
+      </button>
+      <button mat-menu-item routerLink="/about-us">
+        <mat-icon>info</mat-icon>
+        <span>About Us</span>
+      </button>
+      <button mat-menu-item routerLink="/contact-us">
+        <mat-icon>contact_phone</mat-icon>
+        <span>Contact Us</span>
+      </button>
+      <button mat-menu-item routerLink="/cart">
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Cart</span>
+      </button>
+      <button mat-menu-item *ngIf="!isLoggedIn" routerLink="/auth/login">
+        <mat-icon>login</mat-icon>
+        <span>Login</span>
+      </button>
+      <button
+        mat-button
+        *ngIf="!isLoggedIn"
+        class="reg"
+        routerLink="/auth/register"
+      >
+        <mat-icon>how_to_reg</mat-icon>
+        Register
+      </button>
+      <button mat-menu-item *ngIf="isLoggedIn" routerLink="/profile">
+        <mat-icon>account_circle</mat-icon>
+        <span>Profile</span>
+      </button>
+      <button mat-menu-item *ngIf="isLoggedIn" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+
+  <!-- Desktop View: Row Menu -->
+  <div class="desktop-menu" *ngIf="!isMobileView">
+    <button mat-button routerLink="/home">Home</button>
+    <button mat-button routerLink="/product">Shop</button>
+    <button mat-button routerLink="/about-us">About Us</button>
+    <button mat-button routerLink="/contact-us">Contact Us</button>
+    <button mat-button routerLink="/cart">
+      <mat-icon>shopping_cart</mat-icon>
+      Cart
+    </button>
+    <button
+      mat-button
+      *ngIf="!isLoggedIn"
+      class="login"
+      routerLink="/auth/login"
+    >
+      <mat-icon>login</mat-icon>
+      Login
+    </button>
+    <button
+      mat-button
+      *ngIf="!isLoggedIn"
+      class="reg"
+      routerLink="/auth/register"
+    >
+      <mat-icon>how_to_reg</mat-icon>
+      Register
+    </button>
+    <button mat-button *ngIf="isLoggedIn" routerLink="/profile">
+      <mat-icon>account_circle</mat-icon>
+      Profile
+    </button>
+    <button mat-button *ngIf="isLoggedIn" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      Logout
+    </button>
+  </div>
+</mat-toolbar>

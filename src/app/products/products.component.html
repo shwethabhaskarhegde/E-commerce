@@ -1,0 +1,65 @@
+<div class="product-container scrollable">
+  <h2>OUR PRODUCTS</h2>
+  <p>Here you can check out our new products with fair prices on Gift Items.</p>
+
+  <div class="filter-container">
+    <label for="category-filter">Filter by Category:</label>
+    <select (change)="filterByCategory($event)">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of getCategoryKeys()">
+        {{ category }}
+      </option>
+    </select>
+
+    <label for="price-filter">Filter by Price:</label>
+    <select (change)="filterByPrice($event)">
+      <option value="">All Prices</option>
+      <option *ngFor="let range of priceRanges" [value]="range.value">
+        {{ range.label }}
+      </option>
+    </select>
+
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search products..."
+        (input)="searchProducts($event)"
+        class="search-bar"
+      />
+      <button class="search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <a [routerLink]="['/product-details', product.id]" class="product-link">
+        <img
+          [src]="product.thumbnail"
+          [alt]="product.title"
+          class="product-image"
+        />
+      </a>
+
+      <h3>{{ product.title }}</h3>
+      <p>{{ product.price | currency : "INR" : "symbol" }}</p>
+      <p *ngIf="product.discountPercentage" class="discount">
+        Save {{ product.discountPercentage.toFixed(2) }}%
+      </p>
+      <div class="rating">
+        <ng-container *ngFor="let star of [].constructor(5); let i = index">
+          <i class="fa fa-star" [ngClass]="{ filled: i < product.rating }"></i>
+        </ng-container>
+      </div>
+
+      <button (click)="addToCart(product)" class="add-to-cart-btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 GIFTOS. All rights reserved.</p>
+  </footer>
+</div>
