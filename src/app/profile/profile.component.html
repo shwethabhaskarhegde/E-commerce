@@ -1,3 +1,8 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
+
 <div class="profile-container">
   <!-- Header with Avatar -->
   <div class="header">
@@ -13,7 +18,9 @@
 
       <!-- Show File Input on Hover -->
       <div class="upload-overlay" *ngIf="hovering && isEditMode">
-        <label for="fileInput"><mat-icon class="edit">edit</mat-icon></label>
+        <label for="fileInput"
+          ><mat-icon class="edit-icon">edit</mat-icon></label
+        >
         <input
           id="fileInput"
           type="file"
@@ -28,12 +35,15 @@
   <!-- Profile Fields -->
   <div class="profile-fields">
     <div class="field">
-      <label>Name:</label>
+      <mat-icon *ngIf="!isEditMode">person</mat-icon>
+      <label *ngIf="isEditMode">Name:</label>
       <input *ngIf="isEditMode" type="text" [(ngModel)]="user.username" />
       <span *ngIf="!isEditMode">{{ user.username }}</span>
     </div>
+
     <div class="field">
-      <label>Email:</label>
+      <mat-icon *ngIf="!isEditMode">email</mat-icon>
+      <label *ngIf="isEditMode">Email:</label>
       <input
         *ngIf="isEditMode"
         type="email"
@@ -42,8 +52,10 @@
       />
       <span *ngIf="!isEditMode">{{ user.email }}</span>
     </div>
+
     <div class="field">
-      <label>Date of Birth:</label>
+      <mat-icon *ngIf="!isEditMode">calendar_today</mat-icon>
+      <label *ngIf="isEditMode">Date of Birth:</label>
       <input
         *ngIf="isEditMode"
         type="date"
@@ -52,8 +64,10 @@
       />
       <span *ngIf="!isEditMode">{{ user.dob }}</span>
     </div>
+
     <div class="field">
-      <label>Phone Number:</label>
+      <mat-icon *ngIf="!isEditMode">phone</mat-icon>
+      <label *ngIf="isEditMode">Phone Number:</label>
       <input
         *ngIf="isEditMode"
         type="text"
@@ -63,6 +77,17 @@
         (input)="validatePhoneNumber()"
       />
       <span *ngIf="!isEditMode">{{ user.phone }}</span>
+    </div>
+
+    <div class="field">
+      <mat-icon *ngIf="!isEditMode">home</mat-icon>
+      <label *ngIf="isEditMode">Address:</label>
+      <textarea
+        *ngIf="isEditMode"
+        type="text"
+        [(ngModel)]="user.address"
+      ></textarea>
+      <span *ngIf="!isEditMode">{{ user.address }}</span>
     </div>
   </div>
 

@@ -199,7 +199,9 @@ footer {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
+.discount {
+  color: blue;
+}
 /* Responsive adjustments */
 
 @media (max-width: 768px) {

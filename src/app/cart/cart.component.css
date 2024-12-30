@@ -80,7 +80,7 @@
 
 /* Clear cart button */
 .clear-cart-btn {
-  background-color: #3498db;
+  background-color: #2cc690;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -94,7 +94,7 @@
 }
 
 .clear-cart-btn:hover {
-  background-color: #2980b9;
+  background-color: #17a271;
 }
 
 /* Empty cart message */

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { ProductApiResponse } from '../products/products.module';
+import { CartService } from '../cart.service';
+import { SnackbarService } from 'src/app/snackbar.service';
+import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -9,10 +12,15 @@ import { ProductApiResponse } from '../products/products.module';
 })
 export class ProductDetailsComponent implements OnInit {
   public product: any;
-
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  isLoggedIn: boolean = false;
+  constructor(private route: ActivatedRoute, private http: HttpClient, private cartService: CartService,
+    private snackbarService: SnackbarService, private authService:AuthService) {}
 
   ngOnInit(): void {
+    this.authService.isAuthenticated$.subscribe((authenticated) => {
+      this.isLoggedIn = authenticated;
+    });
+
     const productId = this.route.snapshot.paramMap.get('id'); 
     console.log('Product ID from URL:', productId);
     if (productId) {
@@ -36,7 +44,16 @@ export class ProductDetailsComponent implements OnInit {
     }
   }
   addToCart(product: any): void {
-    // Implement cart functionality (reuse CartService)
-    console.log('Adding to cart:', product);
+    this.cartService.addToCart(product);
+    this.snackbarService.showSnackbar(
+      `${product.title} has been added to your cart!`,
+      'success'
+    );
+  }
+  showReviews: boolean = false; // Controls the visibility of the reviews section
+
+  // Function to toggle the reviews section
+  toggleReviews() {
+    this.showReviews = !this.showReviews;
   }
 }

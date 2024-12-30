@@ -16,6 +16,7 @@ export class ProfileComponent implements OnInit {
     email: '',
     phone: '',
     dob: '',
+    address: '',
     imageUrl: 'assets/images/default-avatar.jpg' // Default image path
   };
 
@@ -46,7 +47,7 @@ export class ProfileComponent implements OnInit {
   saveProfile() {
     this.validatePhoneNumber();
     if (this.phoneError) {
-      alert('Please correct the phone number.');
+      this.snackbarService.showSnackbar(' please correct the phone number it should be 10 digits ', 'error');
       return;
     }
     localStorage.setItem('user', JSON.stringify(this.user));

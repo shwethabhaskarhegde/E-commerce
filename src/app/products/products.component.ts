@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 import { SnackbarService } from 'src/app/snackbar.service';
-
+import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -15,6 +15,7 @@ export class ProductsComponent implements OnInit {
   public selectedCategory: string = '';
   public selectedPriceRange: string = ''; // Selected price range
   public searchQuery: string = '';
+  isLoggedIn: boolean = false; 
   
   public priceRanges = [
     { value: '0-100', label: '₹0 - ₹100' },
@@ -27,10 +28,15 @@ export class ProductsComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private cartService: CartService,
-    private snackbarService: SnackbarService
+    private snackbarService: SnackbarService,
+    private authService: AuthService
   ) {}
 
   ngOnInit(): void {
+    this.authService.isAuthenticated$.subscribe((authenticated) => {
+      this.isLoggedIn = authenticated;
+    });
+
     this.getMethod();
   }
 

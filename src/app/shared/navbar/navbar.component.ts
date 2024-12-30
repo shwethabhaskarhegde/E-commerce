@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { CommonModule } from '@angular/common';
 import { RouterModule , Router} from '@angular/router';
 import { AuthService } from 'src/app/auth.service';
+import { CartService } from 'src/app/cart.service';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -17,9 +18,13 @@ export class NavbarComponent implements OnInit{
   menuOpen = false;
   isMobileView = false;
   isLoggedIn: boolean = false; 
-  
-
-  constructor(private authService: AuthService, private router: Router) {}
+  cartItems: any[] = [];
+  cartItemsCount: number = 0;
+  constructor(private authService: AuthService, private router: Router, private cartService: CartService) {
+    this.cartService.itemsCount$.subscribe((count) => {
+      this.cartItemsCount = count;
+    });
+  }
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
@@ -43,6 +48,8 @@ export class NavbarComponent implements OnInit{
   }
   logout() {
     this.authService.logout();
+    this.cartService.clearCart();
+    this.cartItems = [];
     this.router.navigate(['/']); // Optionally navigate to home page after logout
   }
 }

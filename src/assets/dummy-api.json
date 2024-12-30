@@ -63,16 +63,15 @@
        },
        {
           "id":"2",
-          "title":"Teddy bear",
-          "description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
-          "category":"doll",
-          "price":599,
+          "title":"Brass Couple Elephant idol",
+          "description":"Brass Elephant Couple Statue: A beautifully crafted brass figurine of two intricately designed elephants standing on a patterned base, symbolizing unity and grace, perfect for decor or gifting.",
+          "category":"idol",
+          "price":395,
           "discountPercentage":6.9,
           "rating":3.28,
           "stock":44,
           "tags":[
-             "beauty",
-             "eyeshadow"
+             "couple elephant idol"
           ],
           "brand":"Glamour Beauty",
           "sku":"MVCFH27F",
@@ -117,16 +116,16 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
+             "./assets/images/brass-couple-elephant-idol.jpg"
           ],
-          "thumbnail":"./assets/images/teddy1.jpg"
+          "thumbnail":"./assets/images/brass-couple-elephant-idol-thumbnail.png"
        },
        {
           "id":"3",
           "title":"Powder Canister",
           "description":"The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
           "category":"beauty",
-          "price":14.99,
+          "price":679,
           "discountPercentage":18.14,
           "rating":3.82,
           "stock":59,
@@ -186,7 +185,7 @@
           "title":"Red Lipstick",
           "description":"The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
           "category":"beauty",
-          "price":12.99,
+          "price":899,
           "discountPercentage":19.03,
           "rating":2.51,
           "stock":68,
@@ -246,7 +245,7 @@
           "title":"Red Nail Polish",
           "description":"The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
           "category":"beauty",
-          "price":8.99,
+          "price":269,
           "discountPercentage":2.46,
           "rating":3.91,
           "stock":71,
@@ -306,7 +305,7 @@
           "title":"Calvin Klein CK One",
           "description":"CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
           "category":"fragrances",
-          "price":49.99,
+          "price":1499,
           "discountPercentage":0.32,
           "rating":4.85,
           "stock":17,
@@ -368,7 +367,7 @@
           "title":"Chanel Coco Noir Eau De",
           "description":"Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
           "category":"fragrances",
-          "price":129.99,
+          "price":1290,
           "discountPercentage":18.64,
           "rating":2.76,
           "stock":41,
@@ -430,7 +429,7 @@
           "title":"Dior J'adore",
           "description":"J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
           "category":"fragrances",
-          "price":89.99,
+          "price":1388,
           "discountPercentage":17.44,
           "rating":3.31,
           "stock":91,
@@ -492,7 +491,7 @@
           "title":"Dolce Shine Eau de",
           "description":"Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
           "category":"fragrances",
-          "price":69.99,
+          "price":1699,
           "discountPercentage":11.47,
           "rating":2.68,
           "stock":3,
@@ -554,7 +553,7 @@
           "title":"Gucci Bloom Eau de",
           "description":"Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
           "category":"fragrances",
-          "price":79.99,
+          "price":2790,
           "discountPercentage":8.9,
           "rating":2.69,
           "stock":93,
@@ -613,16 +612,15 @@
        },
        {
           "id":"11",
-          "title":"Annibale Colombo Bed",
-          "description":"The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
-          "category":"furniture",
-          "price":1899.99,
+          "title":"Titan Black Watch",
+          "description":"Titan Black Watch: A sleek and elegant black metal wristwatch with a bold design, featuring a chronograph dial and a bezel adorned with small stones for a touch of sophistication.",
+          "category":"watch",
+          "price":21599,
           "discountPercentage":0.29,
           "rating":4.14,
           "stock":47,
           "tags":[
-             "furniture",
-             "beds"
+             "watch"
           ],
           "brand":"Annibale Colombo",
           "sku":"4KMDTZWF",
@@ -667,24 +665,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/1.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/2.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/3.png"
+             "./assets/images/titan-black-watch.png"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/thumbnail.png"
+          "thumbnail":"./assets/images/titan-black-watch-thumbnail.png"
        },
        {
           "id":"12",
-          "title":"Annibale Colombo Sofa",
-          "description":"The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
-          "category":"furniture",
-          "price":2499.99,
+          "title":"Brown Teddy",
+          "description":"Brown Teddy Bear: A soft and cuddly plush bear with a friendly expression, brown fur, and adorable paw print detailing on its feet, perfect for gifting or companionship.",
+          "category":"teddy",
+          "price":2499,
           "discountPercentage":18.54,
           "rating":3.08,
           "stock":16,
           "tags":[
-             "furniture",
-             "sofas"
+             "teddy"
           ],
           "brand":"Annibale Colombo",
           "sku":"LUU95CQP",
@@ -729,24 +724,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/2.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/3.png"
+             "./assets/images/brown-teddy.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png"
+          "thumbnail":"./assets/images/brown-teddy-thumbnail.png"
        },
        {
           "id":"13",
-          "title":"Bedside Table African Cherry",
+          "title":"Yellow Teddy",
           "description":"The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
-          "category":"furniture",
-          "price":299.99,
+          "category":"teddy",
+          "price":2199,
           "discountPercentage":9.58,
           "rating":4.48,
           "stock":16,
           "tags":[
-             "furniture",
-             "bedside tables"
+             "teddy"
           ],
           "brand":"Furniture Co.",
           "sku":"OWPLTZYX",
@@ -791,24 +783,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/1.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/3.png"
+             "./assets/images/yellow-teddy.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/thumbnail.png"
+          "thumbnail":"./assets/images/yellow-teddy-thumbnail.png"
        },
        {
           "id":"14",
-          "title":"Knoll Saarinen Executive Conference Chair",
-          "description":"The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
-          "category":"furniture",
-          "price":499.99,
+          "title":"Antic Watch",
+          "description":"Antique-Style Watch: A silver wristwatch with intricate decorative engravings and a vintage design, featuring a simple round dial with black numerals and a white background.",
+          "category":"watch",
+          "price":4999,
           "discountPercentage":15.23,
           "rating":4.11,
           "stock":47,
           "tags":[
-             "furniture",
-             "office chairs"
+             "watch"
           ],
           "brand":"Knoll",
           "sku":"RKHVJ4FE",
@@ -853,24 +842,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/1.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/2.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png"
+             "./assets/images/antic-watch.webp"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/thumbnail.png"
+          "thumbnail":"./assets/images/antic-watch-thumbnail.png"
        },
        {
           "id":"15",
-          "title":"Wooden Bathroom Sink With Mirror",
-          "description":"The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
-          "category":"furniture",
-          "price":799.99,
+          "title":"monster truck toy",
+          "description":"Large, textured wheels for enhanced grip and off-road simulation. It may also have suspension springs to mimic the bouncy feel of real monster trucks. Made of durable plastic to withstand rough play.",
+          "category":"Toys",
+          "price":760,
           "discountPercentage":11.22,
           "rating":3.26,
           "stock":95,
           "tags":[
-             "furniture",
-             "bathroom"
+             "toy"
           ],
           "brand":"Bath Trends",
           "sku":"7OLTIEVO",
@@ -915,23 +901,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/2.png",
-             "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/3.png"
+             "./assets/images/monster-truck-toy.webp"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/thumbnail.png"
+          "thumbnail":"./assets/images/monster-truck-toy-thumbnail.png"
        },
        {
           "id":"16",
-          "title":"Apple",
-          "description":"Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
-          "category":"groceries",
-          "price":1.99,
+          "title":"Rose Gold Watch",
+          "description":"Rose Gold Watch: A modern Fossil wristwatch in rose gold with a metallic bracelet, a sunburst dial featuring Roman numerals and date display, and elegant accents for a stylish look.",
+          "category":"watch",
+          "price":5999,
           "discountPercentage":1.97,
           "rating":2.96,
           "stock":9,
           "tags":[
-             "fruits"
+             "watch"
           ],
           "sku":"QTROUV79",
           "weight":8,
@@ -975,21 +959,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Apple/1.png"
+             "./assets/images/golden-watch.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Apple/thumbnail.png"
+          "thumbnail":"./assets/images/golden-watch-thumbnail.png"
        },
        {
           "id":"17",
-          "title":"Beef Steak",
+          "title":"Laughing Buddha",
           "description":"High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
-          "category":"groceries",
-          "price":12.99,
+          "category":"idol",
+          "price":678,
           "discountPercentage":17.99,
           "rating":2.83,
           "stock":96,
           "tags":[
-             "meat"
+             "idol"
           ],
           "sku":"BWWA2MSO",
           "weight":9,
@@ -1033,22 +1017,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/1.png"
+             "./assets/images/laughing-buddha.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/thumbnail.png"
+          "thumbnail":"./assets/images/laughing-buddha-thumbnail.png"
        },
        {
           "id":"18",
-          "title":"Cat Food",
+          "title":"Silver with golden Watch",
           "description":"Nutritious cat food formulated to meet the dietary needs of your feline friend.",
-          "category":"groceries",
-          "price":8.99,
+          "category":"watch",
+          "price":1399,
           "discountPercentage":9.57,
           "rating":2.88,
           "stock":13,
           "tags":[
-             "pet supplies",
-             "cat food"
+             "watch"
           ],
           "sku":"C3F8QN6O",
           "weight":9,
@@ -1092,16 +1075,16 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/1.png"
+             "./assets/images/silverwithgolden-watch.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/thumbnail.png"
+          "thumbnail":"./assets/images/silverwithgolden-watch-thumbnail.png"
        },
        {
           "id":"19",
           "title":"Eyeshadow Palette with Mirror",
          "description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
          "category":"beauty",
-         "price":19.99,
+         "price":1399,
          "discountPercentage":5.5,
          "rating":3.28,
          "stock":44,
@@ -1161,7 +1144,7 @@
           "title":"Essence Mascara Lash Princess",
           "description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
           "category":"beauty",
-          "price":9.99,
+          "price":799,
           "discountPercentage":7.17,
           "rating":4.94,
           "stock":5,
@@ -1218,15 +1201,15 @@
        },
        {
           "id":"21",
-          "title":"Cucumber",
+          "title":"Silver Watch",
           "description":"Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
-          "category":"groceries",
-          "price":1.49,
+          "category":"watch",
+          "price":3899,
           "discountPercentage":11.44,
           "rating":4.71,
           "stock":22,
           "tags":[
-             "vegetables"
+             "watch"
           ],
           "sku":"6KGF2K6Z",
           "weight":9,
@@ -1270,22 +1253,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Cucumber/1.png"
+             "./assets/images/silver-wrist-watch.png"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Cucumber/thumbnail.png"
+          "thumbnail":"./assets/images/silver-wrist-watch-thumbnail.png"
        },
        {
           "id":"22",
-          "title":"Dog Food",
+          "title":"Fish Toy",
           "description":"Specially formulated dog food designed to provide essential nutrients for your canine companion.",
-          "category":"groceries",
-          "price":10.99,
+          "category":"Toys",
+          "price":560,
           "discountPercentage":18.15,
           "rating":2.74,
           "stock":40,
           "tags":[
-             "pet supplies",
-             "dog food"
+             "toy"
           ],
           "sku":"A6QRCH37",
           "weight":2,
@@ -1329,21 +1311,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/1.png"
+             "./assets/images/fish-toy.webp"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/thumbnail.png"
+          "thumbnail":"./assets/images/fish-toy-thumbnail.png"
        },
        {
           "id":"23",
-          "title":"Eggs",
-          "description":"Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
-          "category":"groceries",
-          "price":2.99,
+          "title":" xylophone toy",
+          "description":"This is a xylophone toy, often used as a musical instrument for children. It typically features colorful wooden or metal bars that produce different musical notes when struck with a mallet. It's designed to help children develop hand-eye coordination and an interest in music.",
+          "category":"Toys",
+          "price":670,
           "discountPercentage":5.8,
           "rating":4.46,
           "stock":10,
           "tags":[
-             "dairy"
+             "toy"
           ],
           "sku":"YA617RI7",
           "weight":4,
@@ -1387,21 +1369,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Eggs/1.png"
+             "./assets/images/xylophone-toy.webp"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Eggs/thumbnail.png"
+          "thumbnail":"./assets/images/xylophone-toy-thumbnail.png"
        },
        {
           "id":"24",
-          "title":"Fish Steak",
+          "title":"Radha Krishna",
           "description":"Quality fish steak, suitable for grilling, baking, or pan-searing.",
-          "category":"groceries",
-          "price":14.99,
+          "category":"idol",
+          "price":139,
           "discountPercentage":7,
           "rating":4.83,
           "stock":99,
           "tags":[
-             "seafood"
+             "idol"
           ],
           "sku":"XNIH1MTA",
           "weight":8,
@@ -1445,21 +1427,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/1.png"
+             "./assets/images/Radhakrishna.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/thumbnail.png"
+          "thumbnail":"./assets/images/Radhakrishna-thumbnail.png"
        },
        {
           "id":"25",
-          "title":"Green Bell Pepper",
+          "title":"Krishna Idol",
           "description":"Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
-          "category":"groceries",
-          "price":1.29,
+          "category":"idol",
+          "price":450,
           "discountPercentage":15.5,
           "rating":4.28,
           "stock":89,
           "tags":[
-             "vegetables"
+             "idol"
           ],
           "sku":"HU7S7VQ0",
           "weight":7,
@@ -1503,21 +1485,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png"
+             "./assets/images/krishna-idol.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png"
+          "thumbnail":"./assets/images/krishna-idol-thumbnail.png"
        },
        {
           "id":"26",
-          "title":"Green Chili Pepper",
+          "title":"Red Teddy",
           "description":"Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
-          "category":"groceries",
-          "price":0.99,
+          "category":"teddy",
+          "price":1599,
           "discountPercentage":18.51,
           "rating":4.43,
           "stock":8,
           "tags":[
-             "vegetables"
+             "teddy"
           ],
           "sku":"Y4RM3JCB",
           "weight":2,
@@ -1561,21 +1543,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/1.png"
+             "./assets/images/red-teddy.webp"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/thumbnail.png"
+          "thumbnail":"./assets/images/red-teddy-thumbnail.png"
        },
        {
           "id":"27",
-          "title":"Honey Jar",
+          "title":"Christmas teddy",
           "description":"Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
-          "category":"groceries",
-          "price":6.99,
+          "category":"teddy",
+          "price":789,
           "discountPercentage":1.91,
           "rating":3.5,
           "stock":25,
           "tags":[
-             "condiments"
+             "teddy"
           ],
           "sku":"BTBNIIOU",
           "weight":9,
@@ -1619,21 +1601,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/1.png"
+             "./assets/images/white-red-teddy.webp"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/thumbnail.png"
+          "thumbnail":"./assets/images/white-red-teddy-thumbnail.png"
        },
        {
           "id":"28",
-          "title":"Ice Cream",
-          "description":"Creamy and delicious ice cream, available in various flavors for a delightful treat.",
-          "category":"groceries",
-          "price":5.49,
+          "title":"ukulele",
+          "description":"A vibrant red toy ukulele with colorful string accents, featuring a cheerful design that includes a globe motif, ideal for introducing kids to music.",
+          "category":"Toys",
+          "price":699,
           "discountPercentage":7.58,
           "rating":3.77,
           "stock":76,
           "tags":[
-             "desserts"
+             "toy"
           ],
           "sku":"VEZMU1EQ",
           "weight":5,
@@ -1677,24 +1659,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/1.png",
-             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/2.png",
-             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/3.png",
-             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/4.png"
+             "./assets/images/ukulele.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/thumbnail.png"
+          "thumbnail":"./assets/images/ukulele-thumbnail.png"
        },
        {
           "id":"29",
-          "title":"Juice",
+          "title":"Purple Teddy",
           "description":"Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
-          "category":"groceries",
-          "price":3.99,
+          "category":"teddy",
+          "price":3599,
           "discountPercentage":5.45,
           "rating":3.41,
           "stock":99,
           "tags":[
-             "beverages"
+             "teddy"
           ],
           "sku":"M2K19S06",
           "weight":2,
@@ -1738,21 +1717,21 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Juice/1.png"
+             "./assets/images/purple-teddy.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Juice/thumbnail.png"
+          "thumbnail":"./assets/images/purple-teddy-thumbnail.png"
        },
        {
           "id":"30",
-          "title":"Kiwi",
+          "title":"Dog Toy",
           "description":"Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
-          "category":"groceries",
-          "price":2.49,
+          "category":"Toys",
+          "price":399,
           "discountPercentage":10.32,
           "rating":4.37,
           "stock":1,
           "tags":[
-             "fruits"
+             "toy"
           ],
           "sku":"0X3NORB9",
           "weight":8,
@@ -1796,9 +1775,9 @@
              "qrCode":"https://assets.dummyjson.com/public/qr-code.png"
           },
           "images":[
-             "https://cdn.dummyjson.com/products/images/groceries/Kiwi/1.png"
+             "./assets/images/dog-toy.jpg"
           ],
-          "thumbnail":"https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png"
+          "thumbnail":"./assets/images/dog-toy-thumbnail.png"
        }
     ],
     "total":194,

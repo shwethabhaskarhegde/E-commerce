@@ -26,9 +26,13 @@
         <mat-icon>contact_phone</mat-icon>
         <span>Contact Us</span>
       </button>
-      <button mat-menu-item routerLink="/cart">
+      <button mat-menu-item *ngIf="isLoggedIn" routerLink="/cart">
         <mat-icon>shopping_cart</mat-icon>
+
         <span>Cart</span>
+        <span class="cart-count" *ngIf="cartItemsCount > 0">{{
+          cartItemsCount
+        }}</span>
       </button>
       <button mat-menu-item *ngIf="!isLoggedIn" routerLink="/auth/login">
         <mat-icon>login</mat-icon>
@@ -60,7 +64,7 @@
     <button mat-button routerLink="/product">Shop</button>
     <button mat-button routerLink="/about-us">About Us</button>
     <button mat-button routerLink="/contact-us">Contact Us</button>
-    <button mat-button routerLink="/cart">
+    <button mat-button *ngIf="isLoggedIn" routerLink="/cart">
       <mat-icon>shopping_cart</mat-icon>
       Cart
     </button>
